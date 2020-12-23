@@ -82,6 +82,11 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+
+                </div>
+                @php echo ROOT @endphp
+                <div>
+                @php echo \App\SBLog\Core\BlogApp::get_instance()->getProperty('login') @endphp
                 </div>
 
                 <div class="links">
@@ -94,6 +99,10 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+{{--                @php--}}
+{{--                    $p = \App\SBLog\Core\BlogApp::get_instance()->getProperty('login');--}}
+{{--                    dd($p);--}}
+{{--                @endphp--}}
             </div>
         </div>
     </body>
