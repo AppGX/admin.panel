@@ -8,3 +8,7 @@ php artisan migrate:reset отменит изменения всех мигра�
 // autoload
 composer dump-autoload
 composer update
+
+// Config cache clear
+php artisan cache:clear
+php artisan config:cache
